@@ -1,0 +1,43 @@
+chestevent:
+  name: "chestevent"
+  description: "Gérer l'événement Chestevent"
+  usage: "§c/chestevent"
+  aliases:
+    - "chestev"
+
+messages:
+  alreadyStart: "§cL'événement est déjà start"
+  noEvent: "§cChestEvent - événement OFF"
+  start: "§aL'événement ChestEvent vient de démarrer"
+  stop: "§cL'événement ChestEvent a été arrêté"
+  end: "§cL'événement ChestEvent est terminée!"
+  chest_already_exists: "§cLe coffre {CHEST} existe déjà"
+  items_save: "§aItems du coffre {CHEST} sauvegardées"
+  chest_removed: "§aLe coffre {CHEST} a été enlevé"
+  chest_dont_exists: "§cLe coffre {CHEST} n'existe pas"
+  infos:
+    - "Voici les coffres actuels ({NUMBER_OF_CHESTS}) :"
+    - "§6{CHEST} - §7{POSITION}"
+  spawn: "§6{NUMBER_OF_CHESTS} §fChests spawn"
+  despawn: "§6{NUMBER_OF_CHESTS} §fChests despawn"
+  broadcastMessage: "§6ChestEvent §f- Lancement de l'event dans §6{m} minute(s) §fet §6{s} seconde(s)"
+  alreadyInTimer: "§6ChestEvent §c- ChestEvent en timer, arrêtez le timer avec la commande /ChestEvent stop et relencez un plus rapidement"
+  noChest: "§cAucun coffres à disposition, veuillez créez des coffres pour lancer l'event"
+  broadcastTimer: [1, 2, 3, 4, 5, 10, 20, 30, 60, 120, 180, 240, 300, 360]
+  startCancelled: "§6ChestEvent §f- Lancement de l'événement annulé"
+  eventPopup: "§6ChestEvent §f- {m} minute(s) {s} seconde(s) : §6{CHESTS} Coffres"
+  chestsRefill: "§6ChestEvent §f- Les coffres ont été refill !"
+  floatingText: "§6{CHEST}\n\n§fRefill dans §6{REFILL} seconde(s)\n§fDispawn dans §6{DISPAWN} seconde(s)"
+  cantOpenOnOff: "§cVous ne pouvez pas ouvrir un coffre des chestEvent quand l'event est off"
+
+settings:
+  #2 minutes
+  timer: 120
+  shuffleItems: true
+  #spawn les chest quand le serveur démarre
+  spawnOnStart: true
+  #bypass perm = command perm
+  canOpenOnOff: false
+  autorefill:
+    enabled: true
+    cooldown: 10
